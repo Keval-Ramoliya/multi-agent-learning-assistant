@@ -1,5 +1,5 @@
 [//]: # (# Multi-Agent Intelligent Learning & Coding Assistant)
-# 💡 Multi-Agent Learning & Coding Assistant
+# 💡 AstraMind - ( Multi-Agent Learning & Coding Assistant )
 ### *Built by **- Keval Ramoliya***  
 
 
