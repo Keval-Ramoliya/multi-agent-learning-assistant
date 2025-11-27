@@ -6,63 +6,42 @@
 }
 
 /* ================================= */
-/* THEME VARIABLES (Light Mode Base) */
+/* DARK THEME VARIABLES (Your design) */
 /* ================================= */
-
 :root {
-    --bg-main: linear-gradient(135deg, #ffffff, #dfe9ff);
-    --text-color: #1b1b1b;
+    /* BACKGROUND */
+    --bg-main: linear-gradient(135deg, #0a0f24, #091732 40%, #071d41);
 
-    --sidebar-bg: rgba(0, 0, 0, 0.08);
-    --sidebar-text: #111;
-    --sidebar-border: rgba(0, 0, 0, 0.15);
+    /* TEXT COLORS */
+    --text-color: #e4e8f5;
 
-    --user-bubble: #2ecc71;
-    --bot-bubble: rgba(0, 0, 0, 0.05);
+    /* SIDEBAR */
+    --sidebar-bg: rgba(15, 20, 40, 0.65);
+    --sidebar-text: #d7dbec;
+    --sidebar-border: rgba(255, 255, 255, 0.1);
 
-    --header-bg: rgba(0,0,0,0.08);
+    /* HEADER */
+    --header-bg: rgba(15, 20, 40, 0.75);
 
-    --input-bg: rgba(0, 0, 0, 0.05);
-    --input-border: #999;
-    --send-btn-bg: #4aa3ff;
-    --send-btn-hover: #1f8fff;
+    /* MESSAGES */
+    --user-bubble: #3B82F6;
+    --bot-bubble: rgba(255, 255, 255, 0.08);
 
-    --code-bg: #2d2d2d;
-    --code-accent: #4aa3ff;
-    --code-text: #ffebc1;
+    /* INPUT AREA */
+    --input-bg: rgba(12, 17, 38, 0.85);
+    --input-border: rgba(255, 255, 255, 0.15);
+
+    /* SEND BUTTON */
+    --send-btn-bg: #3B82F6;
+    --send-btn-hover: #60A5FA;
+
+    /* CODE BLOCKS */
+    --code-bg: #0d1117;
+    --code-accent: #3B82F6;
+    --code-text: #d1d5db;
 }
 
-/* ================================= */
-/* DARK THEME OVERRIDE */
-/* ================================= */
-
-.dark-theme {
-    --bg-main: linear-gradient(135deg, #0b0f27, #1e2a78);
-    --text-color: #ffffff;
-
-    --sidebar-bg: rgba(255, 255, 255, 0.07);
-    --sidebar-text: #fff;
-    --sidebar-border: rgba(255, 255, 255, 0.15);
-
-    --user-bubble: #27ae60;
-    --bot-bubble: rgba(255,255,255,0.13);
-
-    --header-bg: rgba(255,255,255,0.1);
-
-    --input-bg: rgba(255,255,255,0.08);
-    --input-border: #444;
-    --send-btn-bg: #4aa3ff;
-    --send-btn-hover: #1f8fff;
-
-    --code-bg: #1e1e2f;
-    --code-accent: #4aa3ff;
-    --code-text: #ffd27f;
-}
-
-/* ================================= */
 /* BODY */
-/* ================================= */
-
 body {
     font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
     background: var(--bg-main);
@@ -82,7 +61,6 @@ body {
 /* ================================= */
 /* SIDEBAR */
 /* ================================= */
-
 .sidebar {
     width: 260px;
     background: var(--sidebar-bg);
@@ -238,16 +216,23 @@ body {
     border-top: 1px solid var(--sidebar-border);
 }
 
+
 #user-input {
     flex: 1;
     padding: 12px;
     border-radius: 10px;
+    resize: none;        /* prevents ugly resizing */
     font-size: 15px;
     border: 1px solid var(--input-border);
     background: rgba(0,0,0,0.15);
     color: var(--text-color);
     outline: none;
+    line-height: 1.4;
+    height: auto;
+    max-height: 150px;   /* stops from growing too big */
+    overflow-y: auto;
 }
+
 
 #send-btn {
     width: 55px;

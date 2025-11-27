@@ -13,7 +13,7 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-        <h2 class="brand">⚡ Multi-Agent AI</h2>
+        <h2 class="brand">⚡ AstraMind Agent</h2>
 
         <button class="side-btn" onclick="setAgentMode('auto')">🤖 Auto Mode</button>
         <button class="side-btn" onclick="setAgentMode('coding')">🧠 Coding Agent</button>
@@ -26,8 +26,6 @@
         <div id="pdf-upload-area" style="margin-top:15px; display:none;">
             <input type="file" id="pdf-file" accept="application/pdf">
             <button class="side-btn" onclick="uploadPDF()">📤 Upload PDF</button>
-<!--            <input type="file" id="pdf-file" ... >-->
-<!--            <button onclick="uploadPDF()">....</button>-->
 
         </div>
 
@@ -52,8 +50,12 @@
 
         <div class="chat-box" id="chat-box"></div>
 
+<!--        <div class="input-area">-->
+<!--            <input type="text" id="user-input" placeholder="Type your message...">-->
+<!--            <button id="send-btn">➤</button>-->
+<!--        </div>-->
         <div class="input-area">
-            <input type="text" id="user-input" placeholder="Type your message...">
+            <textarea id="user-input" placeholder="Type your message..." rows="3"></textarea>
             <button id="send-btn">➤</button>
         </div>
 
