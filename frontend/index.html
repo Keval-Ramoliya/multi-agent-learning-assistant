@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Multi-Agent Assistant</title>
+
+<link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="brand">⚡ Multi-Agent AI</h2>
+
+        <button class="side-btn" onclick="setAgentMode('auto')">🤖 Auto Mode</button>
+        <button class="side-btn" onclick="setAgentMode('coding')">🧠 Coding Agent</button>
+        <button class="side-btn" onclick="setAgentMode('learning')">📚 Learning Agent</button>
+        <button class="side-btn" onclick="setAgentMode('project')">🧱 Project Builder</button>
+        <button class="side-btn" onclick="setAgentMode('code_review')">🛠 Code Review</button>
+        <button class="side-btn" onclick="setAgentMode('research')">🔍 Research Agent</button>
+        <button class="side-btn" onclick="setAgentMode('document_reader')">📄 Document Reader</button>
+
+        <div id="pdf-upload-area" style="margin-top:15px; display:none;">
+            <input type="file" id="pdf-file" accept="application/pdf">
+            <button class="side-btn" onclick="uploadPDF()">📤 Upload PDF</button>
+<!--            <input type="file" id="pdf-file" ... >-->
+<!--            <button onclick="uploadPDF()">....</button>-->
+
+        </div>
+
+
+
+        <hr class="divider">
+
+        <button class="export-btn" onclick="downloadLastReply('txt')">⬇ Save as TXT</button>
+        <button class="export-btn" onclick="downloadLastReply('pdf')">⬇ Save as PDF</button>
+
+<!--        <hr class="divider">-->
+
+<!--        <button class="side-btn" id="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>-->
+    </div>
+
+    <!-- Chat Section -->
+    <div class="chat-wrapper">
+
+        <div class="chat-header">
+            <h2 id="header-title">Multi-Agent Learning & Coding Assistant</h2>
+        </div>
+
+        <div class="chat-box" id="chat-box"></div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-btn">➤</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="chat.js"></script>
+
+</body>
+</html>

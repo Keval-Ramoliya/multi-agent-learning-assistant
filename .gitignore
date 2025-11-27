@@ -1,0 +1,95 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pycache
+*.so
+
+# -------------------------
+# Virtual Environment
+# -------------------------
+venv/
+.venv/
+
+# -------------------------
+# Environment Variables
+# -------------------------
+.env
+*.env
+
+# -------------------------
+# Flask / Build / Cache
+# -------------------------
+instance/
+*.log
+*.pid
+*.sqlite3
+.cache/
+log/
+logs/
+*.db
+
+# -------------------------
+# Upload Files
+# -------------------------
+uploads/
+backend/uploads/
+*.pdf
+
+# -------------------------
+# Byte-compiled / Optimized
+# -------------------------
+*.dll
+*.dylib
+*.exe
+
+# -------------------------
+# OS-Specific
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# IDE / Editor Files
+# -------------------------
+# VS Code
+.vscode/
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+
+# -------------------------
+# Node / Frontend (If needed)
+# -------------------------
+node_modules/
+dist/
+build/
+
+# -------------------------
+# MySQL Dumps
+# -------------------------
+*.sql
+*.sql.gz
+
+# -------------------------
+# Backup Files
+# -------------------------
+*.bak
+*.tmp
+*.swp
+
+# -------------------------
+# JSON Logs (Project Logging)
+# -------------------------
+backend/observability/agent_logs.json
+
+# -------------------------
+# Others
+# -------------------------
+*.zip
+*.tar
+*.tar.gz
